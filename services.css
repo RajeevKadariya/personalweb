@@ -1,0 +1,64 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #f5f5f5;
+}
+
+/* Services Section Styling */
+.services-section {
+    padding: 40px 20px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.service-box {
+    background-color: #1c1c1c;
+    color: white;
+    width: 45%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-box:hover {
+    background-color: #b74b4b; /* Red background on hover */
+    transform: scale(1.05); /* Slight expansion effect */
+}
+
+.service-box:hover .service-icon {
+    transform: scale(1.2); /* Slightly enlarges the icon on hover */
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .service-box {
+        width: 90%;
+    }
+}

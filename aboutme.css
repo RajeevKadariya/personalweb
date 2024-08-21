@@ -1,0 +1,146 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1b1b1b;
+    color: #fff;
+    scroll-behavior: smooth; /* Add smooth scrolling */
+}
+
+.about-me {
+    padding: 50px 0;
+    background-color: #1b1b1b;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-size: 2.5em;
+    text-align: center;
+    color: #ff4b5c;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #ddd;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row; /* Align bio and projects side by side */
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.bio {
+    flex: 1; /* Take equal space as projects */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #ff4b5c;
+    margin-bottom: 0; /* Remove gap between image and bio text */
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bio-text {
+    color: #ddd;
+    margin-top: 20px; /* Space between image and text */
+}
+
+.bio-text h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.bio-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff4b5c;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #e03b4e;
+}
+
+.projects-completed {
+    flex: 1; /* Take equal space as bio */
+    color: #ddd;
+    text-align: left; /* Align project items to the left */
+}
+
+.projects-completed h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    font-size: 1.5em;
+    color: #ff4b5c;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff4b5c;
+}

@@ -1,0 +1,123 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px; /* Adjust max-width for larger screens */
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section title styles */
+.section-title {
+    font-size: 3rem; /* Adjusted for better responsiveness */
+    font-weight: 600;
+    margin-bottom: 10px; /* Reduced margin */
+    color: #b74b4b; /* Accent color */
+}
+
+.section-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 40px; /* Reduced margin */
+    color: #ddd;
+}
+
+/* Skills grid styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.skill-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card:hover {
+    transform: scale(1.05); /* Slight expansion effect */
+    box-shadow: 0 8px 20px rgba(183, 75, 75, 0.7); /* Reddish glow effect */
+    background-color: #292929;
+}
+
+/* Icon styles */
+.icon-container {
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-card:hover .icon-container {
+    background-color: #b84a4a; /* Accent color change on hover */
+    transform: scale(1.1); /* Slight enlargement of icon container */
+}
+
+.icon-container i {
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+/* Skill card content styles */
+.skill-card h2 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .skill-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .skill-card p {
+        font-size: 0.9rem;
+    }
+}
